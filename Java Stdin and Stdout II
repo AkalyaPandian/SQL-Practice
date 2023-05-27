@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read an integer from stdin
+        int myInt = scanner.nextInt();
+
+        // Read a double from stdin
+        double myDouble = scanner.nextDouble();
+
+        // Read the rest of the line, which is a string, from stdin
+        scanner.nextLine(); // Consume the newline character left over from reading the double
+        String myString = scanner.nextLine();
+
+        scanner.close();
+
+        // Print the output
+        System.out.println("String: " + myString);
+        System.out.println("Double: " + myDouble);
+        System.out.println("Int: " + myInt);
+    }
+}
